@@ -21,5 +21,5 @@ def get_location():
     return random.choice(citys)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
