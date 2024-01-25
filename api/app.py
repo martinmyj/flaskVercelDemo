@@ -6,9 +6,12 @@
 """
 import flask
 import random
+from flask_cors import CORS
+
 citys = ['北京', '上海', '广州', '深圳', '成都', '重庆', '杭州', '南京', '苏州', '武汉', '天津', '西安', '长沙', '沈阳', '济南', '青岛', '大连', '福州', '厦门', '南昌', '郑州']
 
 app = flask.Flask(__name__)
+CORS(app, supports_credentials=True)
 
 
 @app.route('/')
